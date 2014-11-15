@@ -12,7 +12,12 @@ import os
 import sys
 from collections import OrderedDict
 import logging
-logging.basicConfig(filename='log',level=logging.DEBUG)
+
+
+logging.basicConfig(filename='log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+global logger
+logger = logging.getLogger(__name__)
 
 import Reader
 import Tokenaizer
@@ -21,96 +26,97 @@ import PotintialSets
 class LossyCountingAlgorithm:
     input_list = []
 
-    def __init__(self):
-        """
-        :rtype : object
-        """
+    def __init__(self, bucket_size, len_of_chunk):
         self.D = {}
         self.B = 1
         self.N = 0
-        self.w = 1024
+        self.w = bucket_size
         self.eps = 1 / self.w
-        self.__read_dump_file()
-        logging.debug("Lossy Counting Algorithm init")
+        self.__read_dump_file(len_of_chunk)
+        logger.debug("Lossy Counting Algorithm init")
 
-    def __read_dump_file(self):
+    def __read_dump_file(self, len_of_chunk):
+        #read all files in Input path
         read = Reader.Reader()
         input_as_string = read.loop_over_all_files()
-        # read.set_path(os.getcwd())
-        # read.set_file("154_Full.txt")
-        # dump_file = file('dump.txt')
-        # input_as_string = read.read_content()
-        # print input_as_string
-        
-        subsets_of_input_as_string = Tokenaizer.subset(input_as_string, 6)
+        #split to chunks
+        subsets_of_input_as_string = Tokenaizer.subset(input_as_string, len_of_chunk)
+        #TODO: optimize this section
         for i in subsets_of_input_as_string:
-            # print i
             self.input_list.append(i)
-        # print self.input_list
-        print len(self.input_list)
-        self.all = len(self.input_list)
-        # Tokenaizer.subset(self.input_list, 4)
-        #self.input_list = [1, 2, 4, 3, 4, 3, 4, 5, 4, 6, 7, 3, 3, 6, 1, 1, 3, 2, 4, 7]
+        self.num_of_words = len(self.input_list)
+        #return void
         pass
 
     def run(self):
+        #temp dictionary
         dtemp = {}
-        i = 0
+        current_index = 0
         try:
             for i in range(len(self.input_list)):
-                x = self.input_list[i].encode("hex")
+                word_in_hex = self.input_list[i].encode("hex")
                 self.N += 1
-                if x in self.D:
-                    self.D[x][0] += 1
-                    # print "inc count by 1 to ", x
+                if word_in_hex in self.D:
+                    self.D[word_in_hex][0] += 1
+                    logger.debug("word %s is in dictionary, increase counter by 1", word_in_hex)
                 else:
-                    # print "add ", x, " to D"
-                    self.D.update({x: [1, self.B - 1]})
+                    self.D.update({word_in_hex: [1, self.B - 1]})
+                    logger.debug("word %s is not in dictionary, adding to dictionary", word_in_hex)
 
                 if self.N % self.w == 0:
-                    # print "D before", self.D
                     #copy to temp if valied for next iteration
+                    logger.info("end of iteration %d", self.B)
                     for key, value in self.D.iteritems():
                         # print "if ", value[0], "+", value[1], " <= ", self.B, "for key: ", key
                         if int(value[0] + value[1]) <= self.B:
-                            pass
-                            # del self.D[key]
-                            # print "delete"
+                            logger.debug("value: %d + delta: %d <= B: %d deleting", value[0], value[1], self.B)
+                            #TODO: why can't delete while iterating
                         else:
+                            logger.debug("value: %d + delta: %d <= B: %d keep in set", value[0], value[1], self.B)
                             dtemp.update({key: value})
-                            # print "stay"
+                    #copy temp D to D
                     self.D = dtemp.copy()
+                    #clear temp D for next iteration
                     dtemp.clear()
-                    # print "D after", self.D
                     self.B += 1
-                #i += 1
-                if i % (self.all / 10) == 0:
-                    print i, "/", self.all
+                current_index += 1
+                if current_index % (self.num_of_words / 10) == 0:
+                    #TODO: update to something nice
+                    print i, "/", self.num_of_words
         except IndexError:
-            print "error at index ", i
+            logger.error('Error: ', exc_info=True)
+            print "error at index ", current_index
             pass
-        except:
+        except  Exception, e:
+            logger.error('Error: ', exc_info=True)
             print "Unexpected error:", sys.exc_info()[0]
             raise
 
-        sorted_x = {}
         sorted_x = OrderedDict(sorted(self.D.items(), key=lambda(k, v): (v, k), reverse=True))
         for k, v in sorted_x.iteritems():
             if v[0] > 50:
                 print "key hex: [", k, "] key ascii: [", k.decode("hex"), "] count: [", v[0], "] read from: [", v[1], "]."
-        #print sorted_x
-        listOfPotintial = set()
-        for lword in sorted_x.keys():
-            for rword in sorted_x.keys():
-                PotintialSets.concatinateWords(lword, rword, listOfPotintial)
-        for v in listOfPotintial:
-            print "key hex: [", v.decode("ascii"), "] key ascii: [", v.decode("hex"), "]"
+        return sorted_x
+    
+def potential_next(input_dictionary_of_words):
+    listOfPotintial = set()
+    for lword in input_dictionary_of_words.keys():
+        for rword in input_dictionary_of_words.keys():
+            PotintialSets.concatinateWords(lword, rword, listOfPotintial)
+    print "============ Potential next iteration words ============"
+    for v in listOfPotintial:
+        print "key hex: [", v.decode("ascii"), "] key ascii: [", v.decode("hex"), "]"
+    return listOfPotintial
     
 
 def main():
-    lca = LossyCountingAlgorithm()
-    lca.run()
-
+    logger.debug("Start of program")
+    #Lossy Counting Algorithm
+    lca = LossyCountingAlgorithm(1024, 4)
+    sorted_x = lca.run()
+    #Potential next set
+    potential_next_set = potential_next(sorted_x)
+    logger.debug("End of program")
 
 if __name__ == "__main__":
     main()

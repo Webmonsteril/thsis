@@ -9,14 +9,13 @@ def concatinateWords(lWord, rWord, listOfWords):
     charToDelete = 2
     if ( all(c in string.hexdigits for c in rWord) and all(c in string.hexdigits for c in lWord) ):
         charToDelete = 2
-
     # print lWord[charToDelete:]
     # print rWord[:-charToDelete]
     if lWord[charToDelete:] == rWord[:-charToDelete]:
         # print "True"
         # print "lWord = ", lWord
         # print "rWord = ", rWord
-        print lWord[:charToDelete] + rWord
+        #print lWord[:charToDelete] + rWord
         listOfWords.add(lWord[:charToDelete] + rWord)
     else:
         pass
