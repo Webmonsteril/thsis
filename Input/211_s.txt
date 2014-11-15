@@ -1,0 +1,8 @@
+HTTP/1.1 304 Not Modified
+Date: Wed, 03 Sep 2014 14:56:42 GMT
+Server: PWS/8.0.25
+X-Px: ht h0-s1089.p11-fra.cdngp.net
+Cache-Control: public, max-age=300
+Last-Modified: Fri, 29 Aug 2014 21:45:16 GMT
+Connection: keep-alive
+

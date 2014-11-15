@@ -1,0 +1,247 @@
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Content-Length: 5230
+Content-Type: text/html
+Cache-Control: private, max-age=955
+Date: Wed, 03 Sep 2014 14:56:41 GMT
+Connection: keep-alive
+
+
+
+<html>
+<head>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="Tue, 20 Jun 1995 04:13:09 GMT">
+
+	<style>
+	body
+	{
+	    margin:0;
+	    padding:0;
+	    font-family:arial;
+	}
+
+	.credit
+	{
+	    font-size:11px;
+	    color:#5a5a58;
+	    text-decoration:none;
+	}
+
+	a.credit,a.credit:visited
+	{
+	    font-size:11px;
+	    color:#5a5a58;
+	    text-decoration:none;
+	}
+
+	a.credit:hover
+	{
+	    font-size:11px;
+	    color:#5a5a58;
+	    text-decoration:none;
+	}
+
+	a.goto,a.goto:visited
+	{
+	    font-size:12px;
+	    font-weight:bold;
+	    color:#043d89;
+	    text-decoration:none;
+	}
+
+	a.goto:hover
+	{
+	    font-size:12px;
+	    font-weight:bold;
+	    color:#043d89;
+	    text-decoration:none;
+	}
+
+	.title
+	{
+	    font-size:16px;
+	    color:#000000;
+	    font-weight:bold;
+	    line-height:13px;
+	}
+
+	.content
+	{
+	    font-size:14px;
+	    color:#000000;
+	    font-weight:bold;
+	    line-height:13px;
+	    text-align:auto;
+	    direction:rtl;
+	}
+
+	a.content,a.content:visited
+	{
+	    font-size:14px;
+	    color:#000000;
+	    font-weight:bold;
+	    line-height:13px;
+	    text-align:auto;
+	    direction:rtl;
+	    text-decoration:none;
+	}
+
+	a.content:hover
+	{
+	    font-size:14px;
+	    color:#000000;
+	    font-weight:bold;
+	    line-height:13px;
+	    text-align:auto;
+	    direction:rtl;
+	    text-decoration:none;
+	}
+
+	.content2
+	{
+	    font-size:12px;
+	    color:#000000;
+	    line-height:14px;
+	    text-align:auto;
+	    direction:rtl;
+	    /*
+	    overflow:hidden;
+	    height:45px;
+	    */
+	    padding-top:2px;
+	}
+
+	a.content2,a.content2:visited
+	{
+	    font-size:12px;
+	    color:#000000;
+	    line-height:14px;
+	    text-align:auto;
+	    direction:rtl;
+	    /*
+	    overflow:hidden;
+	    height:45px;
+	    */
+	    padding-top:2px;
+	    text-decoration:none;
+	}
+
+	a.content2:hover
+	{
+		font-size:12px;
+	    color:#000000;
+	    line-height:14px;
+	    text-align:auto;
+	    direction:rtl;
+	    /*
+	    overflow:hidden;
+	    height:45px;
+	    */
+	    padding-top:2px;
+	    text-decoration:none;
+	}
+
+	a.smallLogoTxt,a.smallLogoTxt:visited
+	{
+	    font-size:11px;
+	    color:#ffffff;
+	    line-height:11px;
+	    text-align:auto;
+	    direction:rtl;
+	    text-decoration:none;
+	    font-weight:bold;
+	}
+
+	a.smallLogoTxt:hover
+	{
+		font-size:11px;
+	    color:#ffffff;
+	    line-height:11px;
+	    text-align:auto;
+	    direction:rtl;
+	    text-decoration:none;
+	    font-weight:bold;
+	}
+
+	a.bottomTxt,a.bottomTxt:visited
+	{
+	    font-size:12px;
+	    color:#ce1920;
+	    direction:rtl;
+	    text-decoration:none;
+	}
+
+	a.bottomTxt:hover
+	{
+	    font-size:12px;
+	    color:#ce1920;
+	    direction:rtl;
+	    text-decoration:none;
+	}
+
+	</style>
+	
+</head>
+<body>
+	<table style="width:338px;height:98px;" align="center" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td valign="top">
+				<table width="100%" align="right" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>
+							<table align="right" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td class="content">
+										<a href="#" id="titleHref" class="content" target="_blank">המסך שאינו נגמר: סמסונג חשפה סלולרי שגולש לצדדים </a>
+									</td>
+								
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="100%">
+							<div class="content2">
+								<a href="#"  target="_blank" id="subTitleHref" class="content2">חשפה את ה&#45;Note 4 וה&#45;Note Edge, שני פאבלטי דגל, אחד עם מסך שגולש לשולי הטלפון &#45; תצורת תצוגה חסרת תקדים. צפו </a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td align="left">
+										<a href="#" id="linkTxtHref" class="goto" target="_blank">&laquo; לכתבה המלאה</a>
+									</td>
+									<td align="right" class="credit">
+										הראל עילם
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="5"></td>
+			<td width="128" style="padding-right:5px; padding-top:0px; padding-bottom:5px;"><a  target="_blank" href="#" id="imageHref"><img alt='' title='' width="128" height="88" src="http://go.ynet.co.il/TipIsraeli/pics/teaser_ynet/2009/items/3_9_2014_17_34_43samsungg.jpg" style="border:solid 1px #cccccc;"/></a></td>
+		</tr>
+	</table>
+	
+	<script language="javascript" type="text/javascript">
+
+	    var address = 'http://www.calcalist.co.il/internet/articles/0,7340,L-3639930,00.html';
+	    address += (address.indexOf("?") > -1) ? "&dcRef=ynet" : "?dcRef=ynet";
+	    document.getElementById('titleHref').href = address;
+	    document.getElementById('linkTxtHref').href = address;
+	    document.getElementById('subTitleHref').href = address;
+	    document.getElementById('imageHref').href = address; 
+	    //alert(address);
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Content-Length: 1121
+Content-Type: application/javascript
+Content-MD5: LMn6eCEtBh3Sb1JoLHjEUA==
+Last-Modified: Mon, 01 Sep 2014 14:37:36 GMT
+ETag: 0x8D19409688D1A09
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: d2da0169-0001-002b-0511-3ac013000000
+x-ms-version: 2009-09-19
+x-ms-lease-status: unlocked
+x-ms-blob-type: BlockBlob
+Date: Wed, 03 Sep 2014 14:56:41 GMT
+
+(function() {
+    Exposebox = {isReady:false};
+    ExposeboxLayout = {isReady:false};
+    var protocol = window.location.protocol;
+    protocol = (protocol==='file:')?'http:':protocol;
+    var server = (protocol==='http:') ? 'sf.exposebox.com' : 'exposebox.blob.core.windows.net';
+    var isTest =(window.location.href.indexOf("exposebox=test") > -1);
+	var url1 = isTest ? protocol+'//test.'+server+'/widget/exposebox-widget.js' :
+        protocol+'//'+server+'/widget/exposebox-widget.js';
+	var version1 = '1.49';
+	var jb1 = document.createElement('script');
+	jb1.type = 'text/javascript';
+	jb1.async = true;
+	jb1.src = url1 + '?v=' + version1;
+	var url2 = isTest ? protocol+'//test.'+server+'/widget/exposebox-layout.js' :
+        protocol+'//'+server+'/widget/exposebox-layout.js';
+	var version2 = '1.59';
+	var jb2 = document.createElement('script');
+	jb2.type = 'text/javascript';
+	jb2.async = true;
+	jb2.src = url2 + '?v=' + version2;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(jb1, s);
+	s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(jb2, s);
+})();

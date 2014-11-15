@@ -1,0 +1,11 @@
+GET http://cdn.clicktale.net/www02/ptc/e7acffbd-66c9-4d89-a5ec-99c74916726e.js HTTP/1.1
+Host: cdn.clicktale.net
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+DNT: 1
+Referer: http://www.ynet.co.il/home/0,7340,L-8,00.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+If-Modified-Since: Fri, 29 Aug 2014 21:45:16 GMT
+

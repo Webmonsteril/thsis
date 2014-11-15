@@ -1,0 +1,10 @@
+GET http://www.googletagmanager.com/gtm.js?id=GTM-T6Q59G HTTP/1.1
+Host: www.googletagmanager.com
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+DNT: 1
+Referer: http://www.ynet.co.il/home/0,7340,L-8,00.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+

@@ -1,0 +1,10 @@
+GET http://exposebox.blob.core.windows.net/images/271/9547ddcb1d09521f853141fc734e77af.jpg HTTP/1.1
+Host: exposebox.blob.core.windows.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+DNT: 1
+Referer: http://sf.exposebox.com/winwin/ynet-winwin-widget2.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+

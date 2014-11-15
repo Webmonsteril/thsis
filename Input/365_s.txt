@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 03 Sep 2014 14:56:57 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/5.3.19
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With
+
+0
+
