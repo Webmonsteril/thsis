@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Set-Cookie: SNID=67=rLgF6eoHknAlYD25XyLZFmXGAWkrCbpliQIURYbP3Q=sp4C1iJMpXp2XGWf; expires=Wed, 20-May-2015 07:25:05 GMT; path=/verify; domain=.google.co.il; HttpOnly
+Cache-Control: no-cache, private, must-revalidate
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: text/plain; charset=UTF-8
+Date: Tue, 18 Nov 2014 07:25:05 GMT
+Server: zwbk
+Content-Length: 0
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alternate-Protocol: 443:quic,p=0.01
+

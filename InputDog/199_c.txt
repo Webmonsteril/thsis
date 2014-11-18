@@ -1,0 +1,48 @@
+CONNECT encrypted-tbn1.gstatic.com:443 HTTP/1.0
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+Host: encrypted-tbn1.gstatic.com
+Content-Length: 0
+DNT: 1
+Connection: Keep-Alive
+Pragma: no-cache
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 54 6A F4 56 5D 3C BB B4 F1 48 71 DA FC 30 A4 CE 26 80 B5 E6 9C 66 31 7F A6 0A EB FC A4 B5 4B C9
+"Time": 25-Mar-2016 0:29:40
+SessionID: 77 1B 00 00 A1 39 84 D0 9D 36 39 E5 8C C8 6D 3F AC 5A CD 35 65 3D 19 D4 E9 9F 7B AB CA 3A C4 80
+Extensions: 
+	renegotiation_info	00
+	server_name	encrypted-tbn1.gstatic.com
+	status_request	OCSP - Implicit Responder
+	elliptic_curves	secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	signature_algorithms	sha256_rsa, sha384_rsa, sha1_rsa, sha256_ecdsa, sha384_ecdsa, sha1_ecdsa, sha1_dsa
+Ciphers: 
+	[003C]	TLS_RSA_WITH_AES_128_CBC_SHA256
+	[002F]	TLS_RSA_AES_128_SHA
+	[003D]	TLS_RSA_WITH_AES_256_CBC_SHA256
+	[0035]	TLS_RSA_AES_256_SHA
+	[0005]	SSL_RSA_WITH_RC4_128_SHA
+	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
+	[C027]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+	[C013]	TLS1_CK_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS1_CK_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C023]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C024]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+	[C009]	TLS1_CK_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C00A]	TLS1_CK_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[0040]	TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+	[0032]	TLS_DHE_DSS_WITH_AES_128_SHA
+	[006A]	TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+	[0038]	TLS_DHE_DSS_WITH_AES_256_SHA
+	[0013]	SSL_DHE_DSS_WITH_3DES_EDE_SHA
+	[0004]	SSL_RSA_WITH_RC4_128_MD5
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

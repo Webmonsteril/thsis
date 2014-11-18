@@ -58,22 +58,23 @@ class LossyCountingAlgorithm:
                 self.N += 1
                 if word_in_hex in self.D:
                     self.D[word_in_hex][0] += 1
-                    logger.debug("word %s is in dictionary, increase counter by 1", word_in_hex)
+                    # logger.debug("word %s is in dictionary, increase counter by 1", word_in_hex)
                 else:
                     self.D.update({word_in_hex: [1, self.B - 1]})
-                    logger.debug("word %s is not in dictionary, adding to dictionary", word_in_hex)
+                    # logger.debug("word %s is not in dictionary, adding to dictionary", word_in_hex)
 
                 if self.N % self.w == 0:
                     #copy to temp if valied for next iteration
-                    logger.info("end of iteration %d", self.B)
+                    # logger.info("end of iteration %d", self.B)
                     for key, value in self.D.iteritems():
                         # print "if ", value[0], "+", value[1], " <= ", self.B, "for key: ", key
                         if int(value[0] + value[1]) <= self.B:
-                            logger.debug("value: %d + delta: %d <= B: %d deleting", value[0], value[1], self.B)
+                            pass
+                            # logger.debug("value: %d + delta: %d <= B: %d deleting", value[0], value[1], self.B)
                             #TODO: why can't delete while iterating
                         else:
-                            logger.debug("value: %d + delta: %d <= B: %d keep in set", value[0], value[1], self.B)
                             dtemp.update({key: value})
+                            # logger.debug("value: %d + delta: %d <= B: %d keep in set", value[0], value[1], self.B)
                     #copy temp D to D
                     self.D = dtemp.copy()
                     #clear temp D for next iteration
@@ -94,7 +95,7 @@ class LossyCountingAlgorithm:
 
         sorted_x = OrderedDict(sorted(self.D.items(), key=lambda(k, v): (v, k), reverse=True))
         for k, v in sorted_x.iteritems():
-            if v[0] > 50:
+            if v[0] > 10:
                 print "key hex: [", k, "] key ascii: [", k.decode("hex"), "] count: [", v[0], "] read from: [", v[1], "]."
         return sorted_x
     
@@ -112,7 +113,7 @@ def potential_next(input_dictionary_of_words):
 def main():
     logger.debug("Start of program")
     #Lossy Counting Algorithm
-    lca = LossyCountingAlgorithm(1024, 4)
+    lca = LossyCountingAlgorithm(1024*4, 4)
     sorted_x = lca.run()
     #Potential next set
     potential_next_set = potential_next(sorted_x)

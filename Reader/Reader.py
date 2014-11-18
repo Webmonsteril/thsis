@@ -37,9 +37,9 @@ class Reader():
     def loop_over_all_files(self):
         l = []
         # return test_module("../Input/001_s.txt")
-        for file_name in os.listdir('Input/'):
+        for file_name in os.listdir('InputDog/'):
             if fnmatch.fnmatch(file_name, '*_s.txt*'):
-                l.append(test_module("Input/"+file_name))
+                l.append(test_module("InputDog/"+file_name))
         return ''.join(l)
 
 

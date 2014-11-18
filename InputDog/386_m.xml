@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="390" BitFlags="2100">
+  <SessionTimers ClientConnected="2014-11-18T09:25:14.6994792+02:00" ClientBeginRequest="2014-11-18T09:25:14.6994792+02:00" GotRequestHeaders="2014-11-18T09:25:14.6994792+02:00" ClientDoneRequest="2014-11-18T09:25:14.6994792+02:00" GatewayTime="0" DNSTime="0" TCPConnectTime="9" HTTPSHandshakeTime="276" ServerConnected="2014-11-18T09:25:14.7094793+02:00" FiddlerBeginRequest="2014-11-18T09:25:14.7094793+02:00" ServerGotRequest="2014-11-18T09:25:14.7094793+02:00" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2014-11-18T09:25:14.7094793+02:00" ClientDoneResponse="2014-11-18T09:25:14.7094793+02:00" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-snihostname" V="encrypted-tbn0.gstatic.com" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-egressport" V="50372" />
+    <SessionFlag N="x-autoauth" V="(default)" />
+    <SessionFlag N="x-clientport" V="50371" />
+    <SessionFlag N="https-server-version" V="Tls" />
+    <SessionFlag N="x-clientip" V="127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="AD 33 00 00 ED 6E 68 0F 49 2C 0E EC 3A 1F E9 30 21 73 94 85 5E 65 F4 03 C4 8F 55 3B C6 EC DD 47" />
+    <SessionFlag N="x-hostip" V="173.194.116.197" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-processinfo" V="iexplore:38684" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>
