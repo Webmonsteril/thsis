@@ -3,7 +3,7 @@ import struct
 from itertools import islice
 import os
 import fnmatch
-import os
+import zlib
 
 def split_by_n(seq, n):
     """A generator to divide a sequence into chunks of n units.
@@ -29,10 +29,24 @@ class Reader():
     def read_content(self):
         f = open(self.path + "/" + self.filename, 'rb')
         string = f.read()
-        split = string.split("\r\n\r\n")
-        raw_data = split[1]
-        # p = list(split_by_n(raw_data, n))
-        return raw_data
+        if ("HTTP/1.1 200 OK" in string):
+            split = string.split("\r\n\r\n")
+            raw_data = split[1]
+            # print self.filename
+            # # p = list(split_by_n(raw_data, n))
+            # print split[0]
+            # print "alex"
+            # print split[1]
+            # print "igor"
+            # print len(raw_data)
+            if( "gzip" in split[0]):
+                decompressed = zlib.decompress(raw_data, 16+zlib.MAX_WBITS)
+            else:
+                decompressed = raw_data
+            return decompressed
+        else:
+            print "skip ", self.filename
+            return ""
         
     def loop_over_all_files(self):
         l = []

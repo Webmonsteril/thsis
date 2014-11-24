@@ -13,6 +13,7 @@ import sys
 from collections import OrderedDict
 import logging
 
+sys.stdout = open('run.log', 'w+')
 
 logging.basicConfig(filename='log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
@@ -111,13 +112,20 @@ def potential_next(input_dictionary_of_words):
     
 
 def main():
-    logger.debug("Start of program")
+    logger.error("Start of program")
     #Lossy Counting Algorithm
-    lca = LossyCountingAlgorithm(1024*4, 4)
-    sorted_x = lca.run()
+    lca4 = LossyCountingAlgorithm(1024*1, 4)
+    sorted_x4 = lca4.run()
     #Potential next set
-    potential_next_set = potential_next(sorted_x)
-    logger.debug("End of program")
+    potential_next_set = potential_next(sorted_x4)
+    lca5 = LossyCountingAlgorithm(1024*1, 5)
+    sorted_x5 = lca5.run()
+    #TODO:
+    #check potential 5 from lca 4 with lca5
+    for k in sorted_x5.keys():
+        if k in potential_next_set:
+            print k ," is in next set of 4"
+    logger.error("End of program")
 
 if __name__ == "__main__":
     main()
