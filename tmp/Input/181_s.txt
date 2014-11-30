@@ -1,0 +1,318 @@
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Content-Type: text/html; charset=utf-8
+Content-Length: 19263
+Cache-Control: private, max-age=2382
+Date: Wed, 03 Sep 2014 14:56:42 GMT
+Connection: keep-alive
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255"/>
+<meta http-equiv=X-UA-Compatible content="IE=7">
+<link media=screen type="text/css" href="css/cssfile.css" rel=stylesheet>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js">
+    </script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js">
+    </script>
+<script type="text/javascript" src="js/jquery.lazyload.min.js">
+    </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#foo2").carouFredSel({
+            circular: true,
+            infinite: false,
+            auto: false,
+            cookie: true,
+            direction: 'right',
+            scroll: {
+                onAfter: function (data) {
+
+                    $("img.lazy").lazyload({});
+
+                }
+            },
+            onCreate: function (data) {
+                $("img.lazy").lazyload({});
+            },
+
+            items: 4,
+            prev: {
+                button: "#foo2_prev",
+                key: "left"
+            },
+            next: {
+                button: "#foo2_next",
+                key: "right"
+            }
+        });
+
+        $("img.lazy").lazyload({});
+
+        //if ($('img[src*="media.olsale.co.il/assets/product_images"]')) {
+        //    alert("1");
+        //}
+        //$(".item").each(
+        //    function (index, el) {
+        //        imgPrev = $("img", this).attr("src");
+        //        alert(imgPrev);
+        //    });
+    });
+
+    
+
+   </script>
+
+
+</head>
+<body>
+    <form name="form1" method="post" action="default.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTg2ODYxNjM4ZGQ=" />
+</div>
+
+    <input type="hidden" id="hdn" value="9/3/2014 5:36:36 PM" />
+    <div>
+    
+    <div align="center" style="width: 100%;">
+      <div class="DivMain">
+        <div class="image_carousel">
+          <div id="foo2">
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22980393&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/67356_105.jpg" alt="" title="Nexus 5" width="105px" height="105px">
+                <div class="productname">Nexus 5<br>16GB מסך 4.95”<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1599</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22983709&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/70077_105.jpg" alt="" title="מזגן Legend 22A" width="105px" height="105px">
+                <div class="productname">מזגן Legend 22A<br>עילי מתקדם 20,000BT<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪2390</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22983108&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/69752_105.jpg" alt="" title="מזגן LUCKY12.SY0" width="105px" height="105px">
+                <div class="productname">מזגן LUCKY12.SY0<br>עילי מפוצל 9,220BTU<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1290</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22976533&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/64966_105.jpg" alt="" title="טלוויזיה 39”" width="105px" height="105px">
+                <div class="productname">טלוויזיה 39”<br>LED FULL HD<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1678</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22976970&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/57936_105.jpg" alt="" title="מעבד מזון מקצועי " width="105px" height="105px">
+                <div class="productname">מעבד מזון מקצועי <br>נפח 3.6 ליטר<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1449</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22981008&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/67800_105.jpg" alt="" title="מכשיר להכנת גלידה " width="105px" height="105px">
+                <div class="productname">מכשיר להכנת גלידה <br>נפח 2 ליטר<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1290</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22950764&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/48527_105.jpg" alt="" title="שולחן טניס" width="105px" height="105px">
+                <div class="productname">שולחן טניס<br>מסגרת עבה להגנה<br>משלוח חינם<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1499</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22983661&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/66323_105.jpg" alt="" title="מכונת גילוח חשמלית " width="105px" height="105px">
+                <div class="productname">מכונת גילוח חשמלית <br>מסדרת 3D SensoTouch<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪777</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22978641&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/66081_105.jpg" alt="" title="טלוייזית LED &quot;50 " width="105px" height="105px">
+                <div class="productname">טלוייזית LED "50 <br>עיצוב דק ויוקרתי<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪3210</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22971703&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/62209_105.jpg" alt="" title="מכונת כביסה  7 ק”ג " width="105px" height="105px">
+                <div class="productname">מכונת כביסה  7 ק”ג <br>פתח חזית 1,200 סל”ד<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1790</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22973996&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/63480_105.jpg" alt="" title="מקרר מקפיא תחתון " width="105px" height="105px">
+                <div class="productname">מקרר מקפיא תחתון <br>582 ליטר נטו<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪3990</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22977204&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/65325_105.jpg" alt="" title="מדיח כלים רחב" width="105px" height="105px">
+                <div class="productname">מדיח כלים רחב<br>ל 12 מערכות כלים<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1990</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22984364&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/67124_105.jpg" alt="" title="מחשב נייד ASUS " width="105px" height="105px">
+                <div class="productname">מחשב נייד ASUS <br>מסך נשלף 10.1”<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1543</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22984505&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/70601_105.jpg" alt="" title="ROOMBA 870 " width="105px" height="105px">
+                <div class="productname">ROOMBA 870 <br>שואב אבק רובוטי <br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪2299</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22985460&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/68621_105.jpg" alt="" title="מדפסת משולבת " width="105px" height="105px">
+                <div class="productname">מדפסת משולבת <br> e-All-in-One Print<br><br></div>
+                <div class="Price">
+                  רק ₪354 משלוח ₪29</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22984085&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/70316_105.jpg" alt="" title="מחשב נייד 15.6”" width="105px" height="105px">
+                <div class="productname">מחשב נייד 15.6”<br>Intel Core i5 4210U<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪2543</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22985848&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/71477_105.jpg" alt="" title="כיסא מנהלים/ תלמיד" width="105px" height="105px">
+                <div class="productname">כיסא מנהלים/ תלמיד<br>לישיבה ממושכת ונוחה<br><br></div>
+                <div class="Price">
+                  רק ₪199 משלוח ₪49</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22982158&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/66153_105.jpg" alt="" title="מברגת אימפקט" width="105px" height="105px">
+                <div class="productname">מברגת אימפקט<br> + מברגה מקצועית <br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪649</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22983462&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/65710_105.jpg" alt="" title="מברגה\מקדחה" width="105px" height="105px">
+                <div class="productname">מברגה\מקדחה<br>נטענת תוצרת SKIL<br><br></div>
+                <div class="Price">
+                  רק ₪175 משלוח חינם</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22979876&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/35456_105.jpg" alt="" title="מקרר נפח 267 " width="105px" height="105px">
+                <div class="productname">מקרר נפח 267 <br>מקפיא עליון אלקטרה<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪990</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22982638&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/68869_105.jpg" alt="" title="9.7״ iPad Air " width="105px" height="105px">
+                <div class="productname">9.7״ iPad Air <br>טאבלט 16GB של Apple<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  רק ₪2090 משלוח ₪49</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22985499&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/71330_105.jpg" alt="" title="טלוויזיה 50”" width="105px" height="105px">
+                <div class="productname">טלוויזיה 50”<br>LED FHD SMART TV <br><br></div>
+                <div class="Price">
+                  רק ₪2190 משלוח ₪199</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22980618&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/60647_105.jpg" alt="" title="מגהץ קיטור " width="105px" height="105px">
+                <div class="productname">מגהץ קיטור <br>לחץ קיטור 4.5 בר<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪479</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22985971&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/71569_105.jpg" alt="" title="שואב צילינדר" width="105px" height="105px">
+                <div class="productname">שואב צילינדר<br>רב צקלוני 1600W<br>משלוח חינם!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪1089</div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://www.ynetshops.co.il/itemdetails.aspx?auction_id=22982529&amp;af=2557&amp;olcamp=Ynetshops770X210" target="_blank">
+                <img class="lazy" data-original="http://go.ynet.co.il/TipIsraeli/pics/ynetshops/images/assets/product_images/69226_105.jpg" alt="" title="מקרר דלת ליד דלת" width="105px" height="105px">
+                <div class="productname">מקרר דלת ליד דלת<br>799 ליטר<br>עד 36 תשלומים!<br></div>
+                <div class="Price">
+                  הצעות מ: ₪9990</div>
+              </a>
+            </div>
+          </div>
+          <div class="clearfix">
+          </div>
+          <a class="prev" id="foo2_prev" href="#">
+            <span>prev</span>
+          </a>
+          <a class="next" id="foo2_next" href="#">
+            <span>next</span>
+          </a>
+          <div class="pagination" id="foo2_pag">
+          </div>
+          <div class="TitleRed">
+            <span style="color:blue;">לרכישה טלפונית:</span> 09-9720055
+              </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=1';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script>
+    </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="5" BitFlags="1100">
+  <SessionTimers ClientConnected="2014-09-03T17:56:38.1571202+03:00" ClientBeginRequest="2014-09-03T17:56:38.1861231+03:00" GotRequestHeaders="2014-09-03T17:56:38.1861231+03:00" ClientDoneRequest="2014-09-03T17:56:38.1861231+03:00" GatewayTime="0" DNSTime="37" TCPConnectTime="16" HTTPSHandshakeTime="0" ServerConnected="2014-09-03T17:56:38.2401285+03:00" FiddlerBeginRequest="2014-09-03T17:56:38.2401285+03:00" ServerGotRequest="2014-09-03T17:56:38.2401285+03:00" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="2014-09-03T17:56:42.0565101+03:00" ClientBeginResponse="2014-09-03T17:56:42.0565101+03:00" ClientDoneResponse="2014-09-03T17:56:42.0565101+03:00" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="479" BytesIngress="4271" />
+  <SessionFlags>
+    <SessionFlag N="https-client-snihostname" V="fonts.gstatic.com" />
+    <SessionFlag N="x-egressport" V="56212" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="56193" />
+    <SessionFlag N="https-server-sessionid" V="empty" />
+    <SessionFlag N="x-clientip" V="127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="empty" />
+    <SessionFlag N="x-hostip" V="173.194.112.191" />
+    <SessionFlag N="x-processinfo" V="chrome:31956" />
+    <SessionFlag N="https-server-cipher" V="TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" />
+  </SessionFlags>
+</Session>

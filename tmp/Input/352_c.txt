@@ -1,0 +1,11 @@
+GET http://px.dynamicyield.com/uia?id=1204324471&se=8765235&us=26.11.1&cl=tg.w.frv2.ws.ltos.ah.clk.c.fst.ab.&rf=&p=1711&sub=www.ynet.co.il&sd=8.Central-1.Home&url=http%3A%2F%2Fwww.ynet.co.il%2Fhome%2F0%2C7340%2CL-8%2C00.html&title=ynet+%D7%97%D7%93%D7%A9%D7%95%D7%AA+%D7%AA%D7%95%D7%9B%D7%9F+%D7%95%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D+-+%D7%99%D7%93%D7%99%D7%A2%D7%95%D7%AA+%D7%90%D7%97%D7%A8%D7%95%D7%A0%D7%95%D7%AA&lay=main&ses=841644198b8b6f086dfc0fa44571f10c&aud=785.787&svars=32%3A%40%3ACentral.%40.70%3A%40%3Aother.%40.84%3A%40%3AHome&gv=&exps=%5B%5B%2256%22%2C%223001%22%2C%22153%22%2C0%2Cnull%2Cnull%2C-414586688%2C%221%22%5D%5D&lts=17%3A56&_=1409756206107 HTTP/1.1
+Host: px.dynamicyield.com
+Connection: keep-alive
+Accept: */*
+Origin: http://www.ynet.co.il
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+DNT: 1
+Referer: http://www.ynet.co.il/home/0,7340,L-8,00.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+

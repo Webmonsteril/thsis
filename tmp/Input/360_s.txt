@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Content-Length: 205
+Content-Type: text/xml
+Content-Location: http://www.calcalist.co.il/crossdomain.xml
+Last-Modified: Wed, 29 Jul 2009 10:44:17 GMT
+Accept-Ranges: bytes
+ETag: "646dc7853910ca1:10eb"
+Server: Microsoft-IIS/6.0
+Cache-Control: max-age=40
+Expires: Wed, 03 Sep 2014 14:57:26 GMT
+Date: Wed, 03 Sep 2014 14:56:46 GMT
+Connection: keep-alive
+
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+   <allow-access-from domain="*" />
+</cross-domain-policy>
