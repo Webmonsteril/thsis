@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=600
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 3.0
+x-ms-request-id: 61acb483-fb54-4ff1-aa83-86427a142ef3
+x-STOBuild: STO-4.9.0.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+P3P: CP=ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI
+Server: PROF01
+Date: Sun, 18 Jan 2015 19:20:12 GMT
+Content-Length: 2474
+
+jsonp_loadUserData0({"031bb5d37c0f41b49aa23be67838b1b5":{"DisplayName":"EricLaw [ex-MSFT]","JoinedDate":"Dec 2008","RecentActivityDate":"2015-01-18T01:35:31Z","Company":"Telerik","Affiliations":"MVP","Profile":"https://social.msdn.microsoft.com:443/profile/ericlaw%20%5Bex-msft%5D/","Avatar":"https://i1.social.s-msft.com:443/profile/u/avatar.jpg?displayname=ericlaw+%5bex-msft%5d&size=large&version=f0647cb0-7eba-4cf5-bc26-ec003effd752","LargeAvatar":"https://i1.social.s-msft.com:443/profile/u/avatar.jpg?displayname=ericlaw+%5bex-msft%5d&size=extralarge&version=f0647cb0-7eba-4cf5-bc26-ec003effd752","Biography":"Developer of the Fiddler Web Debugger and SlickRun. Program Manager on Internet Explorer at Microsoft from 2004 - 2012. Named an IE MVP in '13, and I am part of the IE userAgents community (http://useragents.ie). Now at Telerik working on Fiddler full-time.","Website":"http://www.fiddler2.com/","AvatarData":"/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAsACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC6WrO1fU0022EjLvdjhVzjNaDVia1Ztd6hYgjMeTnPTsa4YJN6nS720MkeJdRaTPkx7f7oU/41u6ZqaajCxClJE4ZT2q/CLFcoixhh1+XFUoEtzfyzWxGCu1towDzWk1G10g5WupbNFGKKxsMez0x5FVo9zAFmwAT1qvd3Mdsm+Q/QdzWLNqbyXUUjIAkZOBW9KjKeqJlUUGb9wsFvIdsWGYfMQAM0y3CBAUi2ZHIxVOPUHkXC7ZUx0ZsEVFb6zCZmjlG35iAw5FW6crWsN1Y2NcniimqVdQykEHoRRWFgOcuHkmdnkbJbp7VUVdy89zVtQCxH1qFAASB2Y/zr21FLRHnN3I2BEe1DncMMPTmofL2gEValAG33NRuOBT5UFy3pV89vceW7fumxnPb3oqhH/rJPYCiueph4zdzWNRxVj//Z","Points":"57,705","PercentileRankings":"0.1","RecognitionAvailable":true,"Achievements":{"Gold":"3","Silver":"5","Bronze":"13","Recent":[{"Title":"Forums Answerer III","Medal":"Silver"},{"Title":"Forums Replies III","Medal":"Silver"},{"Title":"Forums Replies II","Medal":"Bronze"}]}}});

@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Cache-Control: public
+Expires: Sun, 18 Jan 2015 19:49:56 GMT
+Last-Modified: Sun, 18 Jan 2015 19:19:56 GMT
+ETag: 635572055967586120
+Server: Microsoft-IIS/7.5
+X-FRAME-OPTIONS: SAMEORIGIN
+Telligent-Evolution: 5.6.50428.7875
+X-Server: NBLOGS10
+P3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+X-server: S10
+Date: Sun, 18 Jan 2015 19:19:55 GMT
+Content-Length: 0
+

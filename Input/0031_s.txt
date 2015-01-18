@@ -1,0 +1,8 @@
+HTTP/1.1 301 Moved Permanently
+Cache-Control: no-cache
+Location: http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Date: Sun, 18 Jan 2015 19:19:54 GMT
+Content-Length: 0
+

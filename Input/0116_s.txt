@@ -1,0 +1,12 @@
+HTTP/1.1 304 Not Modified
+Accept-Ranges: bytes
+Cache-Control: max-age=6482
+Date: Sun, 18 Jan 2015 19:20:12 GMT
+Etag: "0a58795ee22d01:0"
+Last-Modified: Sun, 28 Dec 2014 22:35:30 GMT
+P3P: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
+Server: ECAcc (fcn/40A2)
+VTag: 438249241800000000
+X-Cache: HIT
+X-Powered-By: ASP.NET
+

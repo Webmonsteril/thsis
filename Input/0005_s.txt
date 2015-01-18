@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/plain
+Expires: -1
+Server: Microsoft-IIS/8.5
+S: CH1AMPA04074
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Content-Type
+Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+Access-Control-Max-Age: 21600
+Date: Sun, 18 Jan 2015 19:19:48 GMT
+Content-Length: 0
+

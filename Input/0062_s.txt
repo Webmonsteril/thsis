@@ -1,0 +1,11 @@
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html; charset=UTF-8
+Location: http://blogs.msdn.com/b/fiddler/listcomments.aspx?blogId=13750&postId=10246360&page=0&commentId=0&pageSize=1000&firstLoad=true&time=1421608622920
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+X-server: S10
+Date: Sun, 18 Jan 2015 19:19:56 GMT
+Content-Length: 292
+
+<head><title>Document Moved</title></head>
+<body><h1>Object Moved</h1>This document may be found <a HREF="http://blogs.msdn.com/b/fiddler/listcomments.aspx?blogId=13750&amp;postId=10246360&amp;page=0&amp;commentId=0&amp;pageSize=1000&amp;firstLoad=true&amp;time=1421608622920">here</a></body>

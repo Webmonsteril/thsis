@@ -1,0 +1,9 @@
+HTTP/1.1 302 Found
+Location: https://www.facebook.com/plugins/like.php?locale=he_IL&href=https%3A%2F%2Fwww.facebook.com%2FMsnIsrael&send=false&layout=button_count&width=450&show_faces=false&font&colorscheme=light&action=like&height=21
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+X-FB-Debug: Mwoxgk0I+YY+HdRmKKttAPOuTGRTlmO3SSWVL3EVCa6KO5+xSN2bQNRcFwEBv74X11AmDLrWfl9iYIlrth10jw==
+Date: Sun, 18 Jan 2015 19:19:48 GMT
+Connection: keep-alive
+Content-Length: 0
+

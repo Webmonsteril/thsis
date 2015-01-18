@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Server: Microsoft-IIS/8.5
+X-AspNetMvc-Version: 5.0
+X-Served-By: 04fa702036804fd5810e53447a6a25ab_Microsoft.Developer.Analytics.DataCollector_IN_4
+X-Powered-By: ASP.NET
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Date: Sun, 18 Jan 2015 19:20:03 GMT
+Content-Length: 0
+

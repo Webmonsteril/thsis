@@ -1,0 +1,12 @@
+HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+P3P: CP="NOI DSP COR NID CUR OUR NOR"
+Set-Cookie: opt=0; path=/; domain=.ctnsnet.com; expires=Mon, 18-Jan-2016 19:19:48 GMT;
+Set-Cookie: cid_d22ee5ac1a8d434090058c5dc968c9ae=1; path=/; domain=.ctnsnet.com; expires=Mon, 18-Jan-2016 19:19:48 GMT;
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, max-age=0
+Location: http://cm.g.doubleclick.net/pixel?google_nid=crimtan&google_push=AHNF13INQdoOmYB8h5eUXqdXInjoI3hlLLLJWqbA&google_hm=0i7lrBqNQ0CQBYxdyWjJrkg
+Content-Length: 0
+Date: Sun, 18 Jan 2015 19:19:48 GMT
+Connection: close
+

@@ -1,0 +1,14 @@
+HTTP/1.1 302 Redirect
+Cache-Control: private, no-cache, proxy-revalidate, no-store
+Pragma: no-cache
+Location: http://c1.microsoft.com/c.gif?DI=4050&did=1&t=&CtsSyncId=AE5641B166CB417AA73CA31F6DA5E4E5&MUID=18DF1402447F6AA20A1F12F745736B15&ANON=A=EBD98936F7090671C798AA87FFFFFFFF%26E=103e%26W=1&NAP=V=1.9%26E=fe4%26C=9YGWzpm-y110kt2z8ef43uW1a3z-Qm-NKjbwMIOi2tua1K3tQzK_3A%26W=1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Set-Cookie: SRM_B=18DF1402447F6AA20A1F12F745736B15; domain=c.bing.com; expires=Tue, 17-Jan-2017 19:20:08 GMT; path=/;
+Set-Cookie: SRM_I=18DF1402447F6AA20A1F12F745736B15; domain=c.bing.com; expires=Tue, 17-Jan-2017 19:20:08 GMT; path=/;
+Set-Cookie: SRA_B=EBD98936F7090671C798AA87FFFFFFFF; domain=c.bing.com; expires=Thu, 21-May-2015 19:20:08 GMT; path=/;
+Set-Cookie: SRA_I=EBD98936F7090671C798AA87FFFFFFFF; domain=c.bing.com; expires=Thu, 21-May-2015 19:20:08 GMT; path=/;
+Date: Sun, 18 Jan 2015 19:20:08 GMT
+Content-Length: 0
+

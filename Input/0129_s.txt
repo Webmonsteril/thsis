@@ -1,0 +1,25 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 21:19:13.241
+Connection: close
+EndTime: 21:23:13.623
+ClientToServerBytes: 900
+ServerToClientBytes: 4571
+
+This is a CONNECT tunnel, through which encrypted HTTPS traffic flows.
+To view the encrypted sessions inside this tunnel, enable the Tools > Fiddler Options > HTTPS > Decrypt HTTPS traffic option.
+
+A SSLv3-compatible ServerHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+SessionID:	empty
+Random:		54 BC 07 DF 40 26 D7 42 E9 B8 18 F3 3D DD FD 77 6B E6 E8 5F 37 99 68 FC 0D 52 47 02 F7 AF 56 9E
+Cipher:		TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 [0xCC13]
+CompressionSuite:	NO_COMPRESSION [0x00]
+Extensions:
+		server_name	empty
+		renegotiation_info	00
+		ec_point_formats	uncompressed [0x0], ansiX962_compressed_prime [0x1], ansiX962_compressed_char2  [0x2]
+		SessionTicket	empty
+		ALPN		spdy/3.1
+
