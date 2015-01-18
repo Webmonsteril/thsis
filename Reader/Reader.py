@@ -40,7 +40,11 @@ class Reader():
             # print "igor"
             # print len(raw_data)
             if( "gzip" in split[0]):
-                decompressed = zlib.decompress(raw_data, 16+zlib.MAX_WBITS)
+                try:
+                    decompressed = zlib.decompress(raw_data, 16+zlib.MAX_WBITS)
+                except Exception, e:
+                    print e
+                    decompressed = raw_data
             else:
                 decompressed = raw_data
             return decompressed

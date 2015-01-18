@@ -1,10 +1,18 @@
 #!/usr/bin/python
 #import all in-app modules
 import imp
-Reader = imp.load_source('Reader', '/home/ubuntu/workspace/thsis/Reader/Reader.py')
-Tokenaizer = imp.load_source('Tokenaizer', '/home/ubuntu/workspace/thsis/Tokenaizer/Tokenaizer.py')
-Word = imp.load_source('Word', '/home/ubuntu/workspace/thsis/Word/Word.py')
-PotintialSets = imp.load_source('PotintialSets', '/home/ubuntu/workspace/thsis/PotintialSets/PotintialSets.py')
+# Reader = imp.load_source('Reader', '/home/ubuntu/workspace/thsisWord/Reader/Reader.py')
+# Tokenaizer = imp.load_source('Tokenaizer', '/home/ubuntu/workspace/thsisWord/Tokenaizer/Tokenaizer.py')
+# Word = imp.load_source('Word', '/home/ubuntu/workspace/thsisWord/Word/Word.py')
+# PotintialSets = imp.load_source('PotintialSets', '/home/ubuntu/workspace/thsisWord/PotintialSets/PotintialSets.py')
+
+
+
+
+Packets = imp.load_source('Packets', '/home/ubuntu/workspace/thsisWord/Packets/Packets.py')
+Packet = imp.load_source('Packet', '/home/ubuntu/workspace/thsisWord/Packet/Packet.py')
+
+
 
 #import out-app (system) module
 import sys
@@ -12,79 +20,88 @@ import os
 import sys
 from collections import OrderedDict
 import logging
+import multiprocessing
 
-sys.stdout = open('run.log', 'w+')
 
-logging.basicConfig(filename='log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# sys.stdout = open('run.log', 'w+')
+
+logging.basicConfig(filename='log',level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 global logger
 logger = logging.getLogger(__name__)
 
-import Reader
-import Tokenaizer
-import PotintialSets
+# import Reader
+# import Word
+# import PotintialSets
+
+import Packets
+import Packet
 
 class LossyCountingAlgorithm:
     input_list = []
 
-    def __init__(self, bucket_size, len_of_chunk):
+    def __init__(self, bucket_size):
         self.D = {}
         self.B = 1
         self.N = 0
         self.w = bucket_size
         self.eps = 1 / self.w
-        self.__read_dump_file(len_of_chunk)
-        logger.debug("Lossy Counting Algorithm init")
+        # self.__read_dump_file(len_of_chunk)
+        # logger.debug("Lossy Counting Algorithm init")
 
-    def __read_dump_file(self, len_of_chunk):
-        #read all files in Input path
-        read = Reader.Reader()
-        input_as_string = read.loop_over_all_files()
-        #split to chunks
-        subsets_of_input_as_string = Tokenaizer.subset(input_as_string, len_of_chunk)
-        #TODO: optimize this section
-        for i in subsets_of_input_as_string:
-            self.input_list.append(i)
-        self.num_of_words = len(self.input_list)
-        #return void
-        pass
+    # def __read_dump_file(self, len_of_chunk):
+    #     #read all files in Input path
+    #     read = Reader.Reader()
+    #     input_as_string = read.loop_over_all_files()
+    #     #split to chunks
+    #     subsets_of_input_as_string = Word.subset(input_as_string, len_of_chunk)
+    #     #TODO: optimize this section
+    #     for i in subsets_of_input_as_string:
+    #         self.input_list.append(i)
+    #     self.num_of_words = len(self.input_list)
+    #     #return void
+    #     pass
 
-    def run(self):
+    def run(self, packets):
         #temp dictionary
         dtemp = {}
         current_index = 0
         try:
-            for i in range(len(self.input_list)):
-                word_in_hex = self.input_list[i].encode("hex")
-                self.N += 1
-                if word_in_hex in self.D:
-                    self.D[word_in_hex][0] += 1
-                    # logger.debug("word %s is in dictionary, increase counter by 1", word_in_hex)
-                else:
-                    self.D.update({word_in_hex: [1, self.B - 1]})
-                    # logger.debug("word %s is not in dictionary, adding to dictionary", word_in_hex)
-
-                if self.N % self.w == 0:
-                    #copy to temp if valied for next iteration
-                    # logger.info("end of iteration %d", self.B)
-                    for key, value in self.D.iteritems():
-                        # print "if ", value[0], "+", value[1], " <= ", self.B, "for key: ", key
-                        if int(value[0] + value[1]) <= self.B:
-                            pass
-                            # logger.debug("value: %d + delta: %d <= B: %d deleting", value[0], value[1], self.B)
-                            #TODO: why can't delete while iterating
-                        else:
-                            dtemp.update({key: value})
-                            # logger.debug("value: %d + delta: %d <= B: %d keep in set", value[0], value[1], self.B)
-                    #copy temp D to D
-                    self.D = dtemp.copy()
-                    #clear temp D for next iteration
-                    dtemp.clear()
-                    self.B += 1
-                current_index += 1
-                if current_index % (self.num_of_words / 10) == 0:
-                    #TODO: update to something nice
-                    print i, "/", self.num_of_words
+            for packet in packets.list_of_packets:
+                print "start file", packet.filename," spliting to chanks"
+                self.num_of_words = len(packet.chunks.List_of_chunks)
+                for i in range(self.num_of_words):
+                    chank = packet.chunks.List_of_chunks[i]
+                    word_in_hex = packet.chunks.List_of_chunks[i].word
+                    self.N += 1
+                    if chank in self.D:
+                        self.D[chank][0] += 1
+                        # logger.debug("word: %s position: %d filename: %s is in dictionary, increase counter by 1", word_in_hex, packet.chunks.List_of_chunks[i].position, packet.filename)
+                    else:
+                        self.D.update({chank: [1, self.B - 1]})
+                        # logger.debug("word: %s position: %d filename: %s is not in dictionary, adding to dictionary", word_in_hex, packet.chunks.List_of_chunks[i].position, packet.filename)
+    
+                    if self.N % self.w == 0:
+                        #copy to temp if valied for next iteration
+                        logger.info("end of iteration %d", self.B)
+                        for key, value in self.D.iteritems():
+                            # print "if ", value[0], "+", value[1], " <= ", self.B, "for key: ", key
+                            if int(value[0] + value[1]) <= self.B:
+                                pass
+                                # logger.debug("value: %d + delta: %d <= B: %d deleting", value[0], value[1], self.B)
+                                #TODO: why can't delete while iterating
+                            else:
+                                dtemp.update({key: value})
+                                # logger.debug("value: %d + delta: %d <= B: %d keep in set", value[0], value[1], self.B)
+                        #copy temp D to D
+                        self.D = dtemp.copy()
+                        #clear temp D for next iteration
+                        dtemp.clear()
+                        self.B += 1
+                    current_index += 1
+                    if current_index % (self.num_of_words / 10) == 0:
+                        #TODO: update to something nice
+                        print i, "/", self.num_of_words
         except IndexError:
             logger.error('Error: ', exc_info=True)
             print "error at index ", current_index
@@ -93,11 +110,12 @@ class LossyCountingAlgorithm:
             logger.error('Error: ', exc_info=True)
             print "Unexpected error:", sys.exc_info()[0]
             raise
+            # print self.D
 
         sorted_x = OrderedDict(sorted(self.D.items(), key=lambda(k, v): (v, k), reverse=True))
         for k, v in sorted_x.iteritems():
-            if v[0] > 10:
-                print "key hex: [", k, "] key ascii: [", k.decode("hex"), "] count: [", v[0], "] read from: [", v[1], "]."
+            if v[0] > 1:
+                print "key hex: [", k.word.encode("hex"), "] key ascii: [", k.word, "] position: [ ", k.position ," ] count: [", v[0], "] read from: [", v[1], "]."
         return sorted_x
     
 def potential_next(input_dictionary_of_words):
@@ -111,21 +129,20 @@ def potential_next(input_dictionary_of_words):
     return listOfPotintial
     
 
+
+
 def main():
-    logger.error("Start of program")
-    #Lossy Counting Algorithm
-    lca4 = LossyCountingAlgorithm(1024*1, 4)
-    sorted_x4 = lca4.run()
-    #Potential next set
-    potential_next_set = potential_next(sorted_x4)
-    lca5 = LossyCountingAlgorithm(1024*1, 5)
-    sorted_x5 = lca5.run()
-    #TODO:
-    #check potential 5 from lca 4 with lca5
-    for k in sorted_x5.keys():
-        if k in potential_next_set:
-            print k ," is in next set of 4"
-    logger.error("End of program")
+    p = Packets.Packets()
+    p.loop_over_all_files()
+    print "finished reading files"
+    i = len(p.list_of_packets)
+    for packet in p.list_of_packets:
+        print "split to chunks", packet.filename , "Remains", i
+        i-=1
+        packet.chunks.make_chunks(packet.data,6)
+    print "finished spliting to chanks"
+    lca4 = LossyCountingAlgorithm(1024*10)
+    sorted_x4 = lca4.run(p)
 
 if __name__ == "__main__":
     main()

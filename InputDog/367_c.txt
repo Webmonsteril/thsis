@@ -1,48 +1,10 @@
-CONNECT encrypted-tbn2.gstatic.com:443 HTTP/1.0
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
-Host: encrypted-tbn2.gstatic.com
-Content-Length: 0
+GET http://ping.chartbeat.net/ping?h=ynet.co.il&p=%2Fhome%2F0%2C7340%2CL-8%2C00.html&u=WaXWmBi0l5VCaThze&d=ynet.co.il&g=20691&n=0&f=f3483&c=0.5&x=0&m=0&y=6158&o=1659&w=965&j=60&R=0&W=0&I=1&E=0&e=0&b=5784&t=CREWyWD6JwjlpW2HapyHN5CSvEzv&V=34&tz=-180&_ HTTP/1.1
+Host: ping.chartbeat.net
+Connection: keep-alive
+Accept: image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
 DNT: 1
-Connection: Keep-Alive
-Pragma: no-cache
-
-A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
-
-Version: 3.3 (TLS/1.2)
-Random: 54 6A F4 5A 93 35 87 34 67 4F 85 99 07 B1 F5 FA 1D BD 92 2D 29 78 3C DE 25 04 41 55 E7 9F 5F 12
-"Time": 10-May-2018 18:50:44
-SessionID: 6F 02 00 00 8D 30 4C 81 7E 9E C1 DA 4C C3 A2 E1 AA 31 FA 1B B1 6B 7A 28 ED 0C FA EE 79 CA 65 E1
-Extensions: 
-	renegotiation_info	00
-	server_name	encrypted-tbn2.gstatic.com
-	status_request	OCSP - Implicit Responder
-	elliptic_curves	secp256r1 [0x17], secp384r1 [0x18]
-	ec_point_formats	uncompressed [0x0]
-	signature_algorithms	sha256_rsa, sha384_rsa, sha1_rsa, sha256_ecdsa, sha384_ecdsa, sha1_ecdsa, sha1_dsa
-Ciphers: 
-	[003C]	TLS_RSA_WITH_AES_128_CBC_SHA256
-	[002F]	TLS_RSA_AES_128_SHA
-	[003D]	TLS_RSA_WITH_AES_256_CBC_SHA256
-	[0035]	TLS_RSA_AES_256_SHA
-	[0005]	SSL_RSA_WITH_RC4_128_SHA
-	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
-	[C027]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-	[C013]	TLS1_CK_ECDHE_RSA_WITH_AES_128_CBC_SHA
-	[C014]	TLS1_CK_ECDHE_RSA_WITH_AES_256_CBC_SHA
-	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-	[C023]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
-	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-	[C024]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
-	[C009]	TLS1_CK_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-	[C00A]	TLS1_CK_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-	[0040]	TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
-	[0032]	TLS_DHE_DSS_WITH_AES_128_SHA
-	[006A]	TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
-	[0038]	TLS_DHE_DSS_WITH_AES_256_SHA
-	[0013]	SSL_DHE_DSS_WITH_3DES_EDE_SHA
-	[0004]	SSL_RSA_WITH_RC4_128_MD5
-
-Compression: 
-	[00]	NO_COMPRESSION
-
+Referer: http://www.ynet.co.il/home/0,7340,L-8,00.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
 

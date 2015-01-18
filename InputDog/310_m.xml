@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Session SID="314" BitFlags="19">
-  <SessionTimers ClientConnected="2014-11-18T09:25:12.6394586+02:00" ClientBeginRequest="2014-11-18T09:25:12.9294615+02:00" GotRequestHeaders="2014-11-18T09:25:12.9294615+02:00" ClientDoneRequest="2014-11-18T09:25:12.9294615+02:00" GatewayTime="0" DNSTime="0" TCPConnectTime="0" HTTPSHandshakeTime="0" ServerConnected="2014-11-18T09:25:12.6494587+02:00" FiddlerBeginRequest="2014-11-18T09:25:12.9294615+02:00" ServerGotRequest="2014-11-18T09:25:12.9294615+02:00" ServerBeginResponse="2014-11-18T09:25:13.0194624+02:00" GotResponseHeaders="2014-11-18T09:25:13.0194624+02:00" ServerDoneResponse="2014-11-18T09:25:13.0194624+02:00" ClientBeginResponse="2014-11-18T09:25:13.0194624+02:00" ClientDoneResponse="2014-11-18T09:25:13.0194624+02:00" />
-  <PipeInfo CltReuse="true" Reused="true" />
+<Session SID="310" BitFlags="10">
+  <SessionTimers ClientConnected="2014-09-03T17:56:44.6077652+03:00" ClientBeginRequest="2014-09-03T17:56:44.6087653+03:00" GotRequestHeaders="2014-09-03T17:56:44.6087653+03:00" ClientDoneRequest="2014-09-03T17:56:44.6087653+03:00" GatewayTime="0" DNSTime="0" TCPConnectTime="0" HTTPSHandshakeTime="0" ServerConnected="2014-09-03T17:56:43.3036348+03:00" FiddlerBeginRequest="2014-09-03T17:56:44.6087653+03:00" ServerGotRequest="2014-09-03T17:56:44.6087653+03:00" ServerBeginResponse="2014-09-03T17:56:44.7837828+03:00" GotResponseHeaders="2014-09-03T17:56:44.7837828+03:00" ServerDoneResponse="2014-09-03T17:56:44.7837828+03:00" ClientBeginResponse="2014-09-03T17:56:44.7837828+03:00" ClientDoneResponse="2014-09-03T17:56:44.7847829+03:00" />
+  <PipeInfo Reused="true" />
   <SessionFlags>
-    <SessionFlag N="x-responsebodytransferlength" V="4307" />
-    <SessionFlag N="x-egressport" V="50296" />
-    <SessionFlag N="x-autoauth" V="(default)" />
-    <SessionFlag N="x-clientport" V="50295" />
+    <SessionFlag N="x-egressport" V="56306" />
+    <SessionFlag N="x-responsebodytransferlength" V="23078" />
+    <SessionFlag N="x-clientport" V="56336" />
     <SessionFlag N="x-clientip" V="127.0.0.1" />
-    <SessionFlag N="x-serversocket" V="REUSE ServerPipe#302" />
-    <SessionFlag N="x-hostip" V="173.194.116.197" />
-    <SessionFlag N="x-processinfo" V="iexplore:38684" />
+    <SessionFlag N="x-serversocket" V="REUSE ServerPipe#235" />
+    <SessionFlag N="x-hostip" V="212.199.202.25" />
+    <SessionFlag N="x-processinfo" V="chrome:31956" />
   </SessionFlags>
 </Session>

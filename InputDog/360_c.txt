@@ -1,10 +1,11 @@
-GET https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu7kyPUZpLTYa2iA7WewfLTijikPWPopdRF327e9QHP45pzZmKCg HTTP/1.1
-Accept: image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5
-Referer: https://www.google.co.il/search?hl=iw&site=imghp&tbm=isch&source=hp&biw=805&bih=462&q=dog&oq=dog&gs_l=img.3..0l10.6132.6633.0.6890.3.3.0.0.0.0.152.152.0j1.1.0....0...1ac.1.58.img..2.1.151.Y83amD2USlY
-Accept-Language: en-US
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
-Accept-Encoding: gzip, deflate
-Host: encrypted-tbn3.gstatic.com
+GET http://www.calcalist.co.il/crossdomain.xml HTTP/1.1
+Host: www.calcalist.co.il
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+Accept: */*
 DNT: 1
-Connection: Keep-Alive
+Referer: http://go.calcalist.co.il/long/content/2009/teaser_ynet/flash/index4.html
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: __za_tmp=%7B%22actionQueue%22%3A%5B%5B1396254382%2C-1%2Cnull%2C-9%2C%22%2Freal_estate%2Farticles%2F%22%5D%5D%2C%22_zaq%22%3A%5B%5D%7D; __ZA_mem=%7B%22data_for_camapaign%22%3A%7B%22language%22%3A%22EN%22%2C%22ip%22%3A%22212.179.84.2%22%2C%22start_time%22%3A%222014-03-31T08%3A23%3A49.786Z%22%2C%22referrer%22%3A%22NA%22%2C%22raw_referrer%22%3A%22NA%22%2C%22original_referrer%22%3A%22NA%22%2C%22pages_visited%22%3A%7B%22%2Freal_estate%2Farticles%2F%22%3A2%2C%22%2Fmarketing%2Farticles%2F%22%3A1%2C%22%2Finternet%2Farticles%2F%22%3A1%2C%22%2Flocal%2Farticles%2F%22%3A1%2C%22%2Farticles%2F%22%3A1%2C%22articles%2F%22%3A1%2C%22local%2Farticles%2F%22%3A1%7D%2C%22pages_visited_full_url%22%3A%7B%22650206458%22%3A1%2C%22901628334%22%3A1%2C%221144926148%22%3A1%2C%221843241363%22%3A1%2C%22-1243329874%22%3A1%2C%22-1823794%22%3A1%2C%22-2080858505%22%3A47%7D%2C%22session_campaigns%22%3A%7B%22107%22%3A%221%22%7D%7D%2C%22pages_visited%22%3A%7B%22559510930%22%3A1%2C%22869190623%22%3A1%2C%221096914611%22%3A1%2C%22-1742641062%22%3A1%2C%22-981941695%22%3A1%2C%22-86689213%22%3A1%2C%22-905506834%22%3A1%7D%7D; _cb_ls=1; vgnvisitor=bR1PM00016M001S8l0nITkmppd; PromotionFooter=09/03/2014 17:26:26; __utma=19500519.1342936373.1396254224.1409670851.1409745774.10; __utmb=19500519.8.9.1409745796370; __utmc=19500519; __utmz=19500519.1409745774.10.8.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __za=%7B%22sId%22%3A455667%2C%22sCode%22%3A%2273ea2db46ce66b9cde60c389458ef2ea%22%2C%22sInt%22%3A5000%2C%22aLim%22%3A1000%2C%22asLim%22%3A1000%2C%22na%22%3A2%2C%22td%22%3A1%2C%22ca%22%3A%221%22%2C%22actionPairs%22%3Anull%7D; _chartbeat2=zZ9Y7Ctj_2cB9Cigf.1406446956794.1409754851252.0000000100000011; _chartbeat_uuniq=3
 
