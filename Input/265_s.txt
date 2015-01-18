@@ -1,8 +1,0 @@
-HTTP/1.1 304 Not Modified
-Date: Wed, 03 Sep 2014 13:36:12 GMT
-Expires: Wed, 03 Sep 2014 15:36:12 GMT
-Age: 4832
-Server: GFE/2.0
-Alternate-Protocol: 80:quic
-X-Google-Cookies-Blocked: id=
-

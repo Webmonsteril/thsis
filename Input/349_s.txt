@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-X-Powered-By: Express
-cache-control: max-age:0
-Date: Wed, 03 Sep 2014 14:57:01 GMT
-Connection: keep-alive
-Transfer-Encoding: chunked
-
-0
-

@@ -1,9 +1,0 @@
-GET http://www.telerik.com/UpdateCheck.aspx?isBeta=False HTTP/1.1
-User-Agent: Fiddler/4.4.9.3 (.NET 4.0.30319.18063; WinNT 6.1.7601 SP1; en-US; 4xAMD64)
-Pragma: no-cache
-Accept-Language: en-US
-Referer: http://fiddler2.com/client/4.4.9.3
-Host: www.telerik.com
-Accept-Encoding: gzip, deflate
-Connection: Close
-
